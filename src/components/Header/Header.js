@@ -66,7 +66,7 @@ const Header = (props) => {
           <CustomButton
             text={"Hire Me"}
             icon={<Telegram />}
-            onclick={routeChange()}
+            // onclick={routeChange}
           ></CustomButton>
         </div>
       </Navbar.Collapse>
