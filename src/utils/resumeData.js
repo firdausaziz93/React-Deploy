@@ -3,7 +3,7 @@ import React from "react";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { AssignmentOutlined, WebOutlined } from "@material-ui/icons";
+import { AssignmentOutlined, GitHub, WebOutlined } from "@material-ui/icons";
 
 export default {
   name: "Firdaus Aziz",
@@ -50,14 +50,18 @@ export default {
 
   education: [
     {
-      title: "education 1",
-      date: "SEPTEMBER 2020–PRESENT",
-      desc: " Writing well designed, testable, efficient code by using software development practice  Maintained current system by updating the code and upload to the server  Perform debugging on web page  Made modification to the database structure for the system using  Involved extensively in Unit Testing and User Acceptance Testing",
+      title: "BACHELOR DEGREE IN INFORMATION TECHNOLOGY",
+      from: "UNIVERSITI TEKNOLOGI MARA",
+      date: "2016 – 2018",
+      cgpa: "3.17",
+      // desc: " Writing well designed, testable, efficient code by using software development practice  Maintained current system by updating the code and upload to the server  Perform debugging on web page  Made modification to the database structure for the system using  Involved extensively in Unit Testing and User Acceptance Testing",
     },
     {
-      title: "education 2",
-      date: "FEB 2019–AUGUST 2020",
-      desc: " Develop system that met user requirements by performing system analysis and database design.  Performing code and report development to meet the user requirements.  Perform debugging on web page using React Development Tools.  Involve extensively in Unit Testing and User Acceptance Testing.  Made modification to the database structure for the system using MSSQL Database  Develop Mobile Application by using React Cordova",
+      title: "DIPLOMA IN COMPUTER SCIENCE",
+      from: "UNIVERSITI TEKNOLOGI MARA",
+      date: "2011 – 2014",
+      cgpa: "CGPA : 2.98",
+      // desc: " Develop system that met user requirements by performing system analysis and database design.  Performing code and report development to meet the user requirements.  Perform debugging on web page using React Development Tools.  Involve extensively in Unit Testing and User Acceptance Testing.  Made modification to the database structure for the system using MSSQL Database  Develop Mobile Application by using React Cordova",
     },
   ],
 
@@ -92,4 +96,131 @@ export default {
       desc: ["TortoiseSVN"],
     },
   ],
+
+  portfolio: [
+    {
+      tag: "react",
+      image:
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_Native&psig=AOvVaw0FU4aWCyRWkvSK0nk5OFkM&ust=1639027619573000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiNj-y70_QCFQAAAAAdAAAAABAD",
+      title: "Project 1",
+      desc: "dsfsgsdfsedfdsvsd dgsdf",
+      links: [
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+      ],
+    },
+    {
+      tag: "test",
+      image:
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_Native&psig=AOvVaw0FU4aWCyRWkvSK0nk5OFkM&ust=1639027619573000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiNj-y70_QCFQAAAAAdAAAAABAD",
+      title: "Project 1",
+      desc: "dsfsgsdfsedfdsvsd dgsdf",
+      links: [
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+      ],
+    },
+    {
+      tag: "test2",
+      image:
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_Native&psig=AOvVaw0FU4aWCyRWkvSK0nk5OFkM&ust=1639027619573000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiNj-y70_QCFQAAAAAdAAAAABAD",
+      title: "Project 1",
+      desc: "dsfsgsdfsedfdsvsd dgsdf",
+      links: [
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+        {
+          link: "https://firdausaziz93.github.io/",
+          icon: <GitHub />,
+        },
+      ],
+    },
+  ],
+
+  form: {
+    Profile: [
+      { name: "name", label: "Name", size: 6 },
+      { filler: 6 },
+      { name: "dob", label: "Date of Birth", size: 4, type: "date" },
+      { filler: 8 },
+      { name: "email", label: "Email", size: 6 },
+      { filler: 6 },
+      { name: "position", label: "position", size: 6 },
+      { filler: 6 },
+      { name: "noTel", label: "No Tel", size: 6 },
+      { filler: 6 },
+      {
+        name: "address",
+        label: "Address",
+        size: 12,
+        rows: 4,
+        multiline: true,
+      },
+      {
+        name: "about",
+        label: "About",
+        size: 12,
+        rows: 4,
+        multiline: true,
+      },
+    ],
+
+    Socials_form: {
+      Facebook: [
+        { name: "link", label: "Link", size: 8 },
+        { filler: 4 },
+        { name: "namee", label: "Name", size: 6 },
+        { filler: 6 },
+        { name: "icon", label: "Icon", size: 6 },
+        { filler: 6 },
+      ],
+
+      Instagram: [
+        { name: "link", label: "Link", size: 8 },
+        { filler: 4 },
+        { name: "namee", label: "Name", size: 6 },
+        { filler: 6 },
+        { name: "icon", label: "Icon", size: 6 },
+        { filler: 6 },
+      ],
+
+      LinkedIn: [
+        { name: "link", label: "Link", size: 8 },
+        { filler: 4 },
+        { name: "namee", label: "Name", size: 6 },
+        { filler: 6 },
+        { name: "icon", label: "Icon", size: 6 },
+        { filler: 6 },
+      ],
+    },
+  },
 };

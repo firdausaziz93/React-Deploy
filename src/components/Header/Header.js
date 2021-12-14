@@ -16,6 +16,13 @@ import "./Header.css";
 
 const Header = (props) => {
   const pathName = props?.location?.pathname;
+
+  const routeChange = () => {
+    let path =
+      "https://api.whatsapp.com/send?phone=601151381227&text=Interested%20to%20hire%20you%20for%20my%20company.";
+    window.open(path);
+  };
+
   return (
     <Navbar expand="lg" sticky="top" className="header">
       {/* home link */}
@@ -41,12 +48,12 @@ const Header = (props) => {
           {/* Portfolio */}
           <Nav.Link
             as={NavLink}
-            to="/portfolio"
+            to="/form"
             className={
-              pathName == "/portfolio" ? "header_link_active" : "header_link"
+              pathName == "/form" ? "header_link_active" : "header_link"
             }
           >
-            Portfolio
+            Form
           </Nav.Link>
         </Nav>
 
@@ -56,7 +63,11 @@ const Header = (props) => {
               {resumeData.socials[key].icon}
             </a>
           ))}
-          <CustomButton text={"Hire Me"} icon={<Telegram />}></CustomButton>
+          <CustomButton
+            text={"Hire Me"}
+            icon={<Telegram />}
+            onclick={routeChange()}
+          ></CustomButton>
         </div>
       </Navbar.Collapse>
     </Navbar>

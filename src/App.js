@@ -21,7 +21,7 @@ function App() {
             <Header />
             <div className="main-content cointainer_shadow">
               <Switch>
-                <Route path="/portfolio">
+                <Route path="/form">
                   <Portfolio />
                 </Route>
                 <Route path="/">

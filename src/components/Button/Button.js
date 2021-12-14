@@ -3,11 +3,12 @@ import { Button } from "@material-ui/core";
 
 import "./button.css";
 
-const CustomButton = ({ text, icon }) => {
+const CustomButton = ({ text, icon, onclick }) => {
   return (
     <Button
       className="custom_btn"
       endIcon={icon ? <div className="btn_icon_container">{icon}</div> : null}
+      onClick={onclick}
     >
       <span className="btn_text">{text}</span>
     </Button>
