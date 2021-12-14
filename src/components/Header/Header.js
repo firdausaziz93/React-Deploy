@@ -18,9 +18,9 @@ const Header = (props) => {
   const pathName = props?.location?.pathname;
 
   const routeChange = () => {
-    let path =
+    let path1 =
       "https://api.whatsapp.com/send?phone=601151381227&text=Interested%20to%20hire%20you%20for%20my%20company.";
-    window.open(path);
+    window.open(path1);
   };
 
   return (
@@ -66,7 +66,7 @@ const Header = (props) => {
           <CustomButton
             text={"Hire Me"}
             icon={<Telegram />}
-            // onclick={routeChange}
+            onclick={routeChange}
           ></CustomButton>
         </div>
       </Navbar.Collapse>
