@@ -9,6 +9,7 @@ import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import CustomButton from "../Button/Button";
 import GetAppOutlinedIcon from "@material-ui/icons/GetAppOutlined";
+import fileURL from "../../files/FIRDAUS-CV-.pdf";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem className={"timeline_firstItem"}>
@@ -31,6 +32,11 @@ const CustomTimelineItem = ({ title, text, link }) => (
 );
 
 const Profile = () => {
+  const downloadCv = () => {
+    window.open(fileURL, "_blank", "fullscreen=yes");
+    return false;
+  };
+
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
@@ -44,7 +50,7 @@ const Profile = () => {
 
       <div className="profile_information">
         <CustomTimeline icon={<PersonOutlineOutlinedIcon />}>
-          <CustomTimelineItem title="name" text={resumeData.name} />
+          <CustomTimelineItem title="Name" text={resumeData.name} />
           <CustomTimelineItem title="Title" text={resumeData.title} />
           <CustomTimelineItem title="Email" text={resumeData.email} />
 
@@ -57,10 +63,13 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <div className="button_container">
+          {/* <a href="src/files/FIRDAUS-CV-.pdf" download="FIRDAUS-CV-.pdf"> */}
           <CustomButton
             text={"Download CV"}
             icon={<GetAppOutlinedIcon />}
+            onclick={downloadCv}
           ></CustomButton>
+          {/* </a> */}
         </div>
       </div>
     </div>

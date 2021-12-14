@@ -53,7 +53,7 @@ export default {
       title: "BACHELOR DEGREE IN INFORMATION TECHNOLOGY",
       from: "UNIVERSITI TEKNOLOGI MARA",
       date: "2016 – 2018",
-      cgpa: "3.17",
+      cgpa: "CGPA : 3.17",
       // desc: " Writing well designed, testable, efficient code by using software development practice  Maintained current system by updating the code and upload to the server  Perform debugging on web page  Made modification to the database structure for the system using  Involved extensively in Unit Testing and User Acceptance Testing",
     },
     {
@@ -93,7 +93,7 @@ export default {
     },
     {
       title: "SOURCE CONTROL",
-      desc: ["TortoiseSVN"],
+      desc: ["TortoiseSVN", "GitHub"],
     },
   ],
 
