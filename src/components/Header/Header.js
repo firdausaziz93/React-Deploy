@@ -46,7 +46,7 @@ const Header = (props) => {
           </Nav.Link>
 
           {/* Portfolio */}
-          <Nav.Link
+          {/* <Nav.Link
             as={NavLink}
             to="/form"
             className={
@@ -54,7 +54,7 @@ const Header = (props) => {
             }
           >
             Form
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
 
         <div className="header_right">
