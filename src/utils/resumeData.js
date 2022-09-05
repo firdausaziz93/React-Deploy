@@ -7,7 +7,7 @@ import { AssignmentOutlined, GitHub, WebOutlined } from "@material-ui/icons";
 
 export default {
   name: "Firdaus Aziz",
-  title: "Full Stack Developer",
+  title: "Front End Developer",
 
   birthday: "20th March 1993",
   email: "muhammad93firdaus@gmail.com",

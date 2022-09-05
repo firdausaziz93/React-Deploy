@@ -99,7 +99,7 @@ const Resume = () => {
           <h6 className="section_title_text">My Services</h6>
         </Grid>
 
-        <Grid itam xs={12}>
+        <Grid item xs={12}>
           <Grid container spacing={3} justify="space-around">
             {ResumeData.services.map((service) => (
               <Grid item xs={12} sm={3} md={3}>
